@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/icon.ico">
+</head>
+
+<body>
+
+    <!-- TOP -->
+    <div class="top_cadre">
+        <img class="top_banniere" src="src/Banniere.png" alt="Bannière">
+        <div class="top_vertical_line"></div>
+        <!--<div class="top_horizontal_line"></div>-->
+        <a class="top_slogan">Des Produits De Qualité | L'info. C'est Trop Bien !</a>
+        <a class="top_search">Recherche...</a>
+    </div> 
+
+    <!-- MENU -->
+    <div class="Menu_top">
+        <div class="Menu_pages">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Presentation.html">Présentation</a>
+            <a href="Produits.html">Produits</a>
+            <a class="current">Liens/Contact</a>
+        </div>
+    </div>
+
+    <!-- YAP YAP SECTION -->
+    <img class="banniere" src="src/contact.png" alt="Contact Banner">
+    
+    <div class="presentation">
+        <b><p>Des questions ?</p></b>
+        <p>Vous avez une question, une remarque ou besoin d’aide concernant nos produits ? Nous sommes là pour vous répondre !</p>
+        
+        <br>
+        <p>Deux options s’offrent à vous :</p>
+        
+        <b><p>1. Envoyez-nous un email à l’adresse suivante : support@mtsl.com.</p></b>
+        <p>Nous nous efforçons de répondre dans les meilleurs délais.</p>
+        
+        <br>
+        <b><p>2. Utilisez le formulaire ci-dessous pour nous envoyer un message directement.</p></b>
+        <p>Remplissez simplement votre adresse email, écrivez votre message, et si nécessaire, ajoutez une image pour nous aider à mieux comprendre votre demande.</p>
+        
+        <br>
+        <form>
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+            <br><br>
+        
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" placeholder="Votre message ici" rows="6" required></textarea>
+            <br><br>
+        
+            <label for="image">Ajouter une image :</label>
+            <input type="file" id="image" name="image" accept="image/*">
+            <br><br>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="Footer">
+        <div class="Menu_footer">
+            <p>MENU CONTEXTUEL</p>
+            <p><a href="Accueil.html">Accueil</a></p>
+            <p><a href="Presentation.html">Présentation</a></p>
+            <p><a href="Produits.html">Produits</a></p>
+            <p><a href="Contact.html">Liens / Contacts</a></p>
+        </div>
+        
+        <div class="footer_vertical_line"></div>
+        
+        <div class="Produits_footer">
+            <p>LES PLUS RECHERCHÉS</p>
+            <p><a href="Souris.html">Souris</a></p>
+            <p><a href="Clavier.html">Claviers</a></p>
+            <p><a href="Contact.html">Ecrans</a></p>
+            <p><a href="Contact.html">GPU | Cartes Graphiques</a></p>
+        </div>
+        
+        <div class="footer_vertical_line"></div>
+        
+        <div class="Contacts_footer">
+            <p>UTILITAIRE</p>
+            <p><a href="cgu.html">CGU | Politique de Confidentialité</a></p>
+            <p><a href="Contact.html">Liens Externes, contacts</a></p>
+            <img class="footer_logo" src="src/logo_b_and_w.png" alt="Footer Logo">
+        </div>
+    </div>
+
+</body>
+</html>

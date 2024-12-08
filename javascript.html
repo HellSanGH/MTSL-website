@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    
+    <img id="image" src="JavascriptHorse.jpg" width = "300" height = "300">
+    <button id="BtnPrecedent" >Précédent</button>  
+    <button id="BtnSuivant">Suivant</button>
+    <p id = "Test"></p>
+    <button id="Confirm">Enter</button>
+    <input type = 'text' id = 'URL', placeholder = 'URL de nouvelle image'>
+
+<script>
+let images = ["JavascriptHorse.jpg"]
+let i = 0
+
+    document.getElementById("Confirm").addEventListener("click", Enter)
+    document.getElementById("BtnPrecedent").addEventListener("click",Precedent);
+    document.getElementById("BtnSuivant").addEventListener("click", Suivant);
+
+
+function Enter(){
+    const image = document.getElementById("URL");
+    images.push(image.value)
+
+}    
+function Precedent() {
+    if (i > 0) {
+    i = i-1
+    document.getElementById("image").src = images[i]
+    }
+}    
+function Suivant() {
+    i = i+1
+    document.getElementById("image").src = images[i]
+}   
+</script>
+
+</body>
+</html>
